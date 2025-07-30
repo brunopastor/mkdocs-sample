@@ -6,8 +6,7 @@ WORKDIR /docs
 
 # Copy your mkdocs.yml and docs/ directory into the container
 # Ensure these are in the same directory as your Dockerfile
-COPY mkdocs.yml ./mkdocs.yml
-COPY docs/ ./docs/
+COPY docs .
 
 # (Optional) If you use a custom theme or extra CSS/JS, copy those as well
 # COPY custom_theme/ ./custom_theme/
